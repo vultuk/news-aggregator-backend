@@ -24,7 +24,9 @@
   "homepage": "https://github.com/tech3k/helper-express-microservice#readme",
   "dependencies": {
     "@google-cloud/firestore": "^4.8.0",
+    "@types/axios": "^0.14.0",
     "@vultuk/functionals": "^1.2.0",
+    "axios": "^0.21.1",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "express": "^4.17.1"
