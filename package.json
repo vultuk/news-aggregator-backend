@@ -1,11 +1,11 @@
 {
-  "name": "@refundable/helper-express-microservice",
+  "name": "@vultuk/news-aggregator-backend",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
     "build": "rimraf dist && tsc",
-    "start": "APP_NAME_STAGING=\"refundable-beta-portal\" GOOGLE_APPLICATION_CREDENTIALS=\"./credentials.json\" nodemon",
+    "start": "npx cross-env APP_NAME_STAGING=\"news-aggregator-backend\" GOOGLE_APPLICATION_CREDENTIALS=\"./credentials.json\" nodemon",
     "start:dev": "ts-node ./src/index.ts",
     "start:prod": "node ./dist/index.js",
     "minify": "uglifyjs-folder dist -e -x .js -o dist",
@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tech3k/helper-express-microservice.git"
+    "url": "git+https://github.com/vultuk/news-aggregator-backend.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tech3k/helper-express-microservice/issues"
+    "url": "https://github.com/vultuk/news-aggregator-backend/issues"
   },
-  "homepage": "https://github.com/tech3k/helper-express-microservice#readme",
+  "homepage": "https://github.com/vultuk/news-aggregator-backend#readme",
   "dependencies": {
     "@google-cloud/firestore": "^4.8.0",
     "@types/axios": "^0.14.0",
